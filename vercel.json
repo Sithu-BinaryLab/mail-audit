@@ -1,14 +1,26 @@
 {
   "builds": [
     {
-      "src": "dist/index.html",
+      "src": "dist/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/main.js",
+      "dest": "/dist/main.1ea7125b7cdbbe5e46cd.js"
+    },
+    {
+      "src": "/vendors.js",
+      "dest": "/dist/vendors.15198bdc98a771a76023.js"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/dist/favicon.ico"
     }
   ]
 }
