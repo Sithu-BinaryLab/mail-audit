@@ -44,8 +44,6 @@ function RecipientsDisplay({ recipients }: RecipientsDisplayProps) {
         let wordWidth = tempSpan.offsetWidth;
         const width =
           Math.round(recipientSpan.getBoundingClientRect().width) - wordWidth;
-        console.log("check width of container");
-        //wordWidth is for , ...fdafdfafd
         //console.log("check container width for recep", Math.round(recipientSpan.getBoundingClientRect().width), tempSpan.offsetWidth, width)
         document.body.removeChild(tempSpan);
         setContainerWidth(width);
